@@ -1,0 +1,74 @@
+table, th, td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border-spacing: 0;
+	padding: 8px;
+	text-align: left;
+	width: 100%; 
+}
+h1 {
+	font-family: arial, sans-serif;
+	color: #4CAF50;
+}
+
+/*The following 3 styles are used to make the names clickable
+and show contacts' details*/
+button.accordion {
+	border-radius: 6px;
+    background-color: #FF7F50;
+	box-shadow: 2px 2px 5px #FF4500 inset;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 51%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+ 	background: #C0C0C0;
+	box-shadow: 2px 2px 5px #696969 inset;
+	color: #696969;
+}
+button.accordion.active {
+	width: 100%;
+}
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    margin: 15px 0;
+}
+/*Styling tab*/
+.pic, .table-main {
+	float: left;
+	margin: 10px;
+}
+.posts {
+	clear: left;
+}
+.pic {
+	width: 20%;
+}
+img {
+	width: 250px;
+	height: 250px;
+}
+.table-main {
+	width: 75%;
+}
+.main tr:nth-child(odd){
+	background-color: #f2f2f2
+}
+.main th {
+	width: 20%;
+}
+.account tr:nth-child(even){background-color: #f2f2f2}
+
+.account th {
+    background-color: #4CAF50;
+    color: white;
+}
